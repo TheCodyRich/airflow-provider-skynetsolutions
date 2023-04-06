@@ -4,13 +4,14 @@ import openai
 
 
 class ChatGPTOperator(BaseOperator):
-    def __init__(self, api_key, prompt, *args, max_tokens=1024, temperature=0.5, engine="text-davinci-003", **kwargs):
+    def __init__(self, api_key, prompt, *args, max_tokens=1024, n=1, temperature=0.5, engine="text-davinci-003", **kwargs):
         super().__init__(*args, **kwargs)
         self.api_key = api_key
         self.prompt = prompt
         self.max_tokens = max_tokens
         self.temperature = temperature
         self.engine = engine
+        self.n = n
 
     def execute(self, context):
         # Set up the OpenAI API client
@@ -21,7 +22,7 @@ class ChatGPTOperator(BaseOperator):
             engine=self.engine,
             prompt=self.prompt,
             max_tokens=self.max_tokens,
-            n=1,
+            n=self.n,
             stop=None,
             temperature=self.temperature,
         )
