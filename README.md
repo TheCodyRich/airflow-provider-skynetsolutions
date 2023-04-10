@@ -18,8 +18,8 @@ pip install airflow-provider-thecodyrich
 
 ## Operators
 
-The [`airflow_provider_thecodyrich.operators.chatgpt_operator`](/airflow-provider-thecodyrich/operators/chatgpt_operator.py)
-Operator runs ChatGPT queries via OpenAI's API.
+The [`chatgpt_operator`](/airflow-provider-thecodyrich/operators/chatgpt_operator.py)
+ runs ChatGPT queries via OpenAI's API.
 
 ## Examples
 
