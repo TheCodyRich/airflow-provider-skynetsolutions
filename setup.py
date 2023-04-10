@@ -19,7 +19,7 @@ setuptools.setup(
     """,
     url="https://github.com/TheCodyRich/airflow-provider-thecodyrich",
     install_requires=[
-        "apache-airflow>=2.0",
+        "apache-airflow>=2.2",
         "openai>=0.27.4"
     ],
     packages=find_packages(exclude=["*tests.*", "*tests"]),

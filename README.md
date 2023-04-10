@@ -1,10 +1,28 @@
 # airflow-provider-thecodyrich
+Providers an Airflow Operator to call ChatGPT via OpenAI's API.
+
+## Requirements
+
+* Airflow >=2.2
+* OpenAI >= 0.27.4
+* OpenAI API Token
+
+## Initial Setup
+
+Install the package.
+
+```
+pip install airflow-provider-thecodyrich
+```
 
 
-The README for your provider package should give users an overview of what your provider package does. Specifically, it should include:
+## Operators
 
-High-level documentation about the provider's service.
-Steps for building a connection to the service from Airflow.
-What modules exist within the package.
-An exact set of dependencies and versions that your provider has been tested with.
-Guidance for contributing to the provider package.
+The [`airflow_provider_thecodyrich.operators.chatgpt_operator`](/airflow-provider-thecodyrich/operators/chatgpt_operator.py)
+Operator runs ChatGPT queries via OpenAI's API.
+
+## Examples
+
+A simplified example DAG demonstrates how to use the [ChatGPT Operator](/example_dags/chatgpt_example_dag.py)
+
+To use, you simply need to insert your own `api_key`.
