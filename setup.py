@@ -10,7 +10,7 @@ setuptools.setup(
     version=thecodyrich_provider.__version__,
     author="TheCodyRich",
     license="Apache License 2.0",
-    description="An Apache Airflow provider for using unofficial APIS",
+    description="An Apache Airflow provider for all things made by TheCodyRich",
     long_description=long_description,
     long_description_content_type="text/markdown",
     entry_points="""
