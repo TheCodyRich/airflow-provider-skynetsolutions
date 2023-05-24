@@ -1,4 +1,4 @@
-# airflow-provider-thecodyrich
+# airflow-provider-skynetsolutions
 Providers an Airflow Operator to call ChatGPT via OpenAI's API.
 
 ## Requirements
@@ -12,13 +12,13 @@ Providers an Airflow Operator to call ChatGPT via OpenAI's API.
 Install the package.
 
 ```
-pip install airflow-provider-thecodyrich
+pip install airflow-provider-skynetsolutions
 ```
 
 
 ## Operators
 
-The [`chatgpt_operator`](/airflow-provider-thecodyrich/operators/chatgpt_operator.py)
+The [`chatgpt_operator`](/airflow-provider-skynetsolutions/operators/chatgpt_operator.py)
  runs ChatGPT queries via OpenAI's API.
 
 ## Examples
