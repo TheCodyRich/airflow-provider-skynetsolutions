@@ -1,0 +1,2 @@
+openai >=2.2
+/Users/codyrich/Documents/GitHub/airflow-provider-skynetsolutions/sample_provider/requirements.txt
