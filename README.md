@@ -1,5 +1,5 @@
 # airflow-provider-skynetsolutions
-Providers an Airflow Operator to call ChatGPT via OpenAI's API.
+Provides an Airflow Operator to call ChatGPT via OpenAI's API.
 
 ## Requirements
 
@@ -9,17 +9,8 @@ Providers an Airflow Operator to call ChatGPT via OpenAI's API.
 
 ## Initial Setup
 
-Install the package.
+copy the source code and dump it in your includes as a custom operator.
 
-```
-pip install airflow-provider-skynetsolutions
-```
-
-
-## Operators
-
-The [`chatgpt_operator`](/airflow-provider-skynetsolutions/operators/chatgpt_operator.py)
- runs ChatGPT queries via OpenAI's API.
 
 ## Examples
 
